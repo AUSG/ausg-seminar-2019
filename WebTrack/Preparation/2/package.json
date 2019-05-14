@@ -1,0 +1,14 @@
+{
+  "name": "2",
+  "version": "1.0.0",
+  "description": "간단하게 따라 써보면서 JavaScript(Node.js) 모듈 시스템을 익힙니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "short-uuid": "^3.1.1"
+  }
+}
