@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Layout Components test suite should render 1`] = `ShallowWrapper {}`;
+
+exports[`Components PlayerList Components test suite should render 1`] = `ShallowWrapper {}`;
+
+exports[`Components PlayerList Components test suite should render 2`] = `ShallowWrapper {}`;
+
+exports[`Components Runner Components test suite should render 1`] = `ShallowWrapper {}`;
