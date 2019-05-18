@@ -38,8 +38,12 @@
 
 본 실습 세션에는 실제 코딩이 포함됩니다. VS Code를 꼭 설치해주세요.
 
+## 3. Terminal & AWS CLI
+
+[번들 설치 관리자를 사용하여 AWS CLI 설치](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/install-bundle.html)를 참고해 AWS CLI 설치
+
 # 자 그럼 이제 시작해볼까요?
 
 1. [[이론 1] 사용할 AWS 서비스 살펴보기](./lecture1)
-1. [[이론 2] React와 CRA](./lecture2)
-1. [[실습 1] 본격적인 실습 시작! 나만의 달리기 게임을 만들어보자!](./handsOn1)
+2. [[이론 2] React와 CRA](./lecture2)
+3. [[실습 1] 본격적인 실습 시작! 나만의 달리기 게임을 만들어보자!](./handsOn1)
