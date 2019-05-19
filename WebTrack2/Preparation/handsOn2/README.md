@@ -11,8 +11,7 @@
 > $ npm i
 > \$ npm start
 
-![react_handsOn2](
-https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/react_handsOn2.png)
+![react_handsOn2](/WebTrack2/handsOnContents/images/react_handsOn2.png)
 
 만약 위와 같은 결과가 나타났다면 성공하신 겁니다! 왜냐면 아직 AWS Amplify에 대한 설정을 진행하지 않았기 때문입니다. 그렇다면 다음을 따라 Amplify를 설정해주세요.
 
@@ -24,13 +23,11 @@ https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/
 
 설정에 대해서는 다음의 사진을 참고해주세요.
 
-![amplify_init](
-https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/amplify_init.png)
+![amplify_init](/WebTrack2/handsOnContents/images/amplify_init.png)
 
 설정을 끝내고 'npm start'를 통해 프로젝트를 실행했을 때 아래와 같은 화면이 보인다면 성공하신 겁니다!
 
-![amplify_cognito_success](
-https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/amplify_cognito_success.png)
+![amplify_cognito_success](/WebTrack2/handsOnContents/images/amplify_cognito_success.png)
 
 하지만, 아직은 AWS 서비스를 붙이지 않았기 때문에 제대로 동작하지 않습니다. 회원가입을 하려고 해도 제대로 동작하지 않죠. 그렇기 때문에 이제는 AWS 서비스를 붙여보도록 하겠습니다. 다음을 따라 Amazon Cognito를 실행해주세요.
 
@@ -43,11 +40,9 @@ https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/
 
 설정에 대해서는 다음의 사진을 참고해주세요.
 
-![amplify_add_auth](
-https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/amplify_add_auth.png)
+![amplify_add_auth](/WebTrack2/handsOnContents/images/amplify_add_auth.png)
 
-![amplify_push](
-https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/amplify_push.png)
+![amplify_push](/WebTrack2/handsOnContents/images/amplify_push.png)
 
 설정을 끝내고 'npm start'를 통해 프로젝트를 실행했을 때 정보를 입력해 이메일로 보안 코드를 받아 회원가입을 하고, 로그인이 가능하시다면 성공하신 겁니다!
 
