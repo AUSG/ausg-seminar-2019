@@ -66,8 +66,7 @@ https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/
 
 설정에 대해서는 다음의 사진을 참고해주세요.
 
-![amplify_push](
-https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/amplify_add_hosting.png)
+![amplify_push](/WebTrack2/handsOnContents/images/amplify_add_hosting.png)
 
 만약 동작이 성공했다면, 우리의 웹 어플리케이션이 호스팅된 것입니다! 아주 간단하지 않나요!? 간단한 명령으로 오늘 우리는 계정에 대한 처리와 웹 호스팅을 진행했습니다. 물론 서버의 동작없이 말이지요!
 
