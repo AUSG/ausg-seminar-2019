@@ -44,29 +44,41 @@
 
 설치가 완료되었으면 AWS CLI를 통해 로컬에 Default 계정을 설정하도록 하겠습니다. 우선 AWS Console에 root 계정으로 로그인하신 후 다음을 따라 유저를 생성해주세요! 만약 이미 유저가 있으시고, Access Key와 Secret Access Key를 알고 계신다면 과정을 생략하셔도 좋습니다!
 
-![iam_add_user1](/WebTrack2/HandsOnContents/images/iam_add_user1.png)
+![iam_add_user1](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_add_user1.png)
 
-![iam_add_user2](/WebTrack2/HandsOnContents/images/iam_add_user2.png)
+![iam_add_user2](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_add_user2.png)
 
-![iam_add_user3](/WebTrack2/HandsOnContents/images/iam_add_user3.png)
+![iam_add_user3](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_add_user3.png)
 
-![iam_edit_user1](/WebTrack2/HandsOnContents/images/iam_edit_user1.png)
+![iam_edit_user1](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_user1.png)
 
-![iam_edit_user2](/WebTrack2/HandsOnContents/images/iam_edit_user2.png)
+![iam_edit_user2](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_user2.png)
 
-![iam_edit_user3](/WebTrack2/HandsOnContents/images/iam_edit_user3.png)
+![iam_edit_user3](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_user3.png)
 
-![iam_edit_user4](/WebTrack2/HandsOnContents/images/iam_edit_user4.png)
+![iam_edit_user4](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_user4.png)
 
-![iam_edit_user5](/WebTrack2/HandsOnContents/images/iam_edit_user5.png)
+![iam_edit_user5](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_user5.png)
 
-![iam_edit_s3](/WebTrack2/HandsOnContents/images/iam_edit_s3.png)
+![iam_edit_s3](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_s3.png)
 
-![iam_edit_cognito](/WebTrack2/HandsOnContents/images/iam_edit_cognito.png)
+![iam_edit_cognito](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_cognito.png)
 
-![iam_edit_lambda](/WebTrack2/HandsOnContents/images/iam_edit_lambda.png)
+![iam_edit_lambda](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_lambda.png)
 
-![iam_edit_final](/WebTrack2/HandsOnContents/images/iam_edit_final.png)
+![iam_edit_final](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/iam_edit_final.png)
 
 계정을 등록한 후 나오는 페이지에서 주의해야 할 점은 AWS Access Key와 Secret Access Key를 기억해야 한다는 점입니다. Key는 암호화가 되어있기 때문에 육안으로 외우는 건 불편하겠죠. 그렇기 때문에 별도의 csv 파일이나 개인의 공간에 Key에 대한 정보를 저장하셔야 합니다.
 
@@ -82,7 +94,8 @@
 >
 > \$ aws configure list
 
-![aws_configure](/WebTrack2/HandsOnContents/images/aws_configure.png)
+![aws_configure](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/aws_configure.png)
 
 마지막 명령을 실행하면 다음과 같은 모습으로 터미널에 나타납니다. 다음과 같은 결과가 나오셨다면 다음으로 넘어갑시다!
 
@@ -114,7 +127,8 @@ CRA는 이론에서 말한 것처럼 React 보일러 플레이트의 일종입�
 > $ npm i
 > \$ npm start
 
-![react_handsOn1](/WebTrack2/HandsOnContents/images/react_handsOn1.png)
+![react_handsOn1](
+https://github.com/AUSG/ausg-seminar-2019/blob/master/WebTrack2/HandsOnContents/images/react_handsOn1.png)
 
 위와 같은 페이지가 정상적으로 보이시나요? 그렇다면 성공하신 겁니다! 어떤 분들께는 너무 쉬웠을 수 있지만, 여기까지 하셨으면 이제 React 프로젝트를 '시작'해보실 수 있을 거에요! 여기서는 자세하게 다루지 않지만, 만약 여러분이 React에 관심이 있으시다면 자세한 자료들을 찾아 학습해보시는 것도 좋을 것 같습니다! :)
 
