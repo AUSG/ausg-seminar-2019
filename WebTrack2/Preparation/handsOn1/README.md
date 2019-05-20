@@ -60,13 +60,13 @@
 
 ![iam_edit_user5](/WebTrack2/handsOnContents/images/iam_edit_user5.png)
 
-![iam_edit_s3](/WebTrack2/handsOnContents/images/iam_edit_s3.png)
+![iam_edit_s3](/WebTrack2/handsOnContents/images/iam_edit_user_s3.png)
 
-![iam_edit_cognito](/WebTrack2/handsOnContents/images/iam_edit_cognito.png)
+![iam_edit_cognito](/WebTrack2/handsOnContents/images/iam_edit_user_cognito.png)
 
-![iam_edit_lambda](/WebTrack2/handsOnContents/images/iam_edit_lambda.png)
+![iam_edit_lambda](/WebTrack2/handsOnContents/images/iam_edit_user_lambda.png)
 
-![iam_edit_final](/WebTrack2/handsOnContents/images/iam_edit_final.png)
+![iam_edit_final](/WebTrack2/handsOnContents/images/iam_edit_user_final.png)
 
 계정을 등록한 후 나오는 페이지에서 주의해야 할 점은 AWS Access Key와 Secret Access Key를 기억해야 한다는 점입니다. Key는 암호화가 되어있기 때문에 육안으로 외우는 건 불편하겠죠. 그렇기 때문에 별도의 csv 파일이나 개인의 공간에 Key에 대한 정보를 저장하셔야 합니다.
 
