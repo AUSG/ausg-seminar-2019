@@ -6,12 +6,9 @@
 
 복사 붙여넣기가 끝나셨다면 실습 프로젝트에서 다음의 과정을 진행해주세요.
 
-> 복사 붙여넣기 완료
->
-> $ rm -rf node_modules
->
-> $ npm i
->
+> // 복사 붙여넣기 완료  
+> $ rm -rf node_modules  
+> $ npm i  
 > \$ npm start
 
 ![react_handsOn2](/WebTrack2/handsOnContents/images/react_handsOn2.png)
