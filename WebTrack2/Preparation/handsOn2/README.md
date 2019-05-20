@@ -7,8 +7,11 @@
 복사 붙여넣기가 끝나셨다면 실습 프로젝트에서 다음의 과정을 진행해주세요.
 
 > 복사 붙여넣기 완료
+>
 > $ rm -rf node_modules
+>
 > $ npm i
+>
 > \$ npm start
 
 ![react_handsOn2](/WebTrack2/handsOnContents/images/react_handsOn2.png)
@@ -18,7 +21,9 @@
 ## AWS Amplify 설정하기
 
 > $ amplify init
+>
 > // 설정에 대한 설명은 하단의 사진을 참고해주세요.)
+>
 > $ npm start
 
 설정에 대해서는 다음의 사진을 참고해주세요.
@@ -34,8 +39,11 @@
 ### 로그인, AWS Amplify CLI와 Amplify Framework로 Amazon Cognito 설정하기
 
 > $ amplify add auth
+>
 > // 설정에 대한 설명은 하단의 사진을 참고해주세요.)
+>
 > $ amplify push
+>
 > \$ npm start
 
 설정에 대해서는 다음의 사진을 참고해주세요.
@@ -55,8 +63,11 @@
 ### 웹 호스팅, AWS Amplify CLI와 Amplify Framework로 Amazon S3 설정하기
 
 > $ amplify add hosting
+>
 > // 설정에 대한 설명은 하단의 사진을 참고해주세요.)
+>
 > $ amplify publish
+>
 > // 배포에 성공하면 자동으로 해당 웹 페이지로 이동하게 되지만, 만약 이동되지 않았다면 실행 결과에 나오는 URL로 접속해 이동하세요.
 
 설정에 대해서는 다음의 사진을 참고해주세요.
