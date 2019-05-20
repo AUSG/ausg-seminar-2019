@@ -60,11 +60,7 @@
 
 ![iam_edit_user5](/WebTrack2/handsOnContents/images/iam_edit_user5.png)
 
-![iam_edit_s3](/WebTrack2/handsOnContents/images/iam_edit_user_s3.png)
-
-![iam_edit_cognito](/WebTrack2/handsOnContents/images/iam_edit_user_cognito.png)
-
-![iam_edit_lambda](/WebTrack2/handsOnContents/images/iam_edit_user_lambda.png)
+위의 설정과 같이 이번 세션에서 사용할 서비스들의 권한을 설정해주세요. 실제 제품을 사용할 때는 사용할 기능의 권한만 추가하지만, 오늘은 세션이기 때문에 모든 권한을 계정에 추가하도록 합니다. 결과는 다음과 같습니다.  
 
 ![iam_edit_final](/WebTrack2/handsOnContents/images/iam_edit_user_final.png)
 
