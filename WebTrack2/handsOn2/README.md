@@ -6,8 +6,8 @@
 
 복사 붙여넣기가 끝나셨다면 실습 프로젝트에서 다음의 과정을 진행해주세요.
 
-> 복사 붙여넣기 완료
-> $ rm -rf node_modules
+> 복사, 붙여넣기 완료(기존의 src와 pakcage.json을 삭제하고 진행할 것을 권장드립니다!)
+> $ rm -rf node_modules package-lock.json
 > $ npm i
 > \$ npm start
 
