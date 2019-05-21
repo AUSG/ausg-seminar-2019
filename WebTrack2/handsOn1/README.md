@@ -77,7 +77,7 @@
 > // 4번째 입력인 output에 대한 입력은 생략합니다.
 >
 > \$ aws configure list
-
+    
 ![aws_configure](/WebTrack2/handsOnContents/images/aws_configure.png)
 
 마지막 명령을 실행하면 다음과 같은 모습으로 터미널에 나타납니다. 다음과 같은 결과가 나오셨다면 다음으로 넘어갑시다!
