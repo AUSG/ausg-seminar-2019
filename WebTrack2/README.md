@@ -39,16 +39,15 @@
 
 본 실습 세션에는 실제 코딩이 포함됩니다. VS Code를 꼭 설치해주세요.
 
-## 3. Terminal & AWS CLI
+## 4. Terminal & AWS CLI
 
-[번들 설치 관리자를 사용하여 AWS CLI 설치](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/install-bundle.html)를 참고해 AWS CLI 설치
+사용하는 노트북의 터미널과 [번들 설치 관리자를 사용하여 AWS CLI 설치](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/install-bundle.html)를 참고해 AWS CLI 설치해주셔야 원활한 실습 진행이 가능합니다!
 
-## 4. 만약 이전에 진행했단 사전 세션에 대해 궁금하시다면 [사전 세션](/WebTrack)을 참고하세요!
+## 5. 만약 이전에 진행했 사전 세션에 대해 궁금하시다면 [사전 세션](/WebTrack)을 참고하세요!
 
 # 자 그럼 이제 시작해볼까요?
 
 1. [[이론 1] 사용할 AWS 서비스 살펴보기](./lecture1)
 2. [[이론 2] React와 CRA](./lecture2)
 3. [[실습 1] 본격적인 실습 시작! 나만의 달리기 게임을 만들어보자!](./handsOn1)
-4. [[실습 2] AWS Amplify를 사용해 나만의 공룡 게임을 만들어보자!](./handsOn2)
-   ]
+4. [[실습 2] AWS Amplify를 사용해 나만의 공룡 게임을 만들어보자!](./handsOn2)]
