@@ -60,7 +60,7 @@ $ amplify --version
 
 여기까지 진행한 후 나오는 페이지에서 유의해야 할 점은 AWS Access Key와 Secret Access Key를 기억해야 한다는 점입니다. 두 개의 Key는 암호화되어 제공되기 때문에 육안으로 외우는 건 불편하겠죠. 그렇기 때문에 별도의 csv 파일이나 개인의 공간에 Key에 대한 정보를 저장하셔야 합니다.
 
-더불어 Key를 잊지 않기 위해 별도로 Key에 대한 정보를 저장하신다면 취급에 주의해야 한다는 점을 명심하세요!
+> 더불어 Key를 잊지 않기 위해 별도로 Key에 대한 정보를 저장하신다면 취급에 주의해야 한다는 점을 명심하세요!
 
 ![iam_edit_user1](/WebTrack2/handsOnContents/images/iam_edit_user1.png)
 
