@@ -14,7 +14,7 @@ React에 대해 알아보고, CRA를 활용해 간단한 어플리케이션을 �
 
 세션의 특성 상 자세한 설명은 생략했지만, 만약 리액트에 대해 궁금하신 점이 있으시다면 강연자의 연락처로 연락해주시거나 다음의 문서를 참고하시기 바랍니다.
 
-[React 공식 문서(영어)](https://reactjs.org/)
+[React 공식 문서(영어)](https://reactjs.org/)  
 [React 공식 문서(한글)](https://ko.reactjs.org/)
 
 ### CRA(Create React App)란?
