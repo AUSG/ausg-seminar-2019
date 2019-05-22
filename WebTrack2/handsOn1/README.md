@@ -12,14 +12,16 @@
 
 [VS Code 공식 문서](https://code.visualstudio.com/)
 
-> 세션 진행자의 개발 환경
->
-> $ node --version // 8.10.0 이상 필요  
-> v12.1.0  
-> $ npm --version // 5.2 이상 필요  
-> 6.9.0  
-> \$ aws --version  
-> aws-cli/1.16.156 Python/2.7.15 Darwin/18.5.0 botocore/1.12.146  
+```
+세션 진행자의 개발 환경
+
+$ node --version // 8.10.0 이상 필요  
+v12.1.0  
+$ npm --version // 5.2 이상 필요  
+6.9.0  
+$ aws --version  
+aws-cli/1.16.156 Python/2.7.15 Darwin/18.5.0 botocore/1.12.146  
+```
 
 별다른 오류 없이 위와 비슷한 결과가 나오시나요? 만약 그게 아니시라면 직접 해결해보시거나 손을 들고 주변의 스태프에게 도움을 요청하세요! 이 다음부터는 환경 설정에 대한 설명은 진행하지 않기 때문입니다.
 
@@ -39,10 +41,12 @@
 
 우선 터미널에서 다음의 명령으로 AWS Amplify를 다운로드 하시고 제대로 설치되었는지 확인해주세요(버전이 제대로 출력된다면 설치된 것입니다).
 
-> npm install -g @aws-amplify/cli
-> (...)
-> \$ amplify --version
-> 1.6.8
+```
+$ npm install -g @aws-amplify/cli
+(...)
+$ amplify --version
+1.6.8
+```
 
 설치가 완료되었으면 AWS CLI를 통해 로컬에 Default 계정을 설정하도록 하겠습니다. 우선 AWS Console에 root 계정으로 로그인하신 후 다음을 따라 유저를 생성해주세요! 만약 이미 유저가 있으시고, Access Key와 Secret Access Key를 알고 계신다면 과정을 생략하셔도 좋습니다!
 
@@ -74,14 +78,15 @@
 
 이제 권한이 설정된 유저를 만들었으니 다음의 명령으로 Default AWS 계정을 등록하세요(만약 이미 등록하셨다면 생략하시면 됩니다).
 
-> \$ aws configure
-> 계정의 AWS Access Key 입력
-> 계정의 AWS Secret Access Key 입력
-> 계정의 region 입력
-> // 4번째 입력인 output에 대한 입력은 생략합니다.
->
-> \$ aws configure list
-    
+```
+$ aws configure
+계정의 AWS Access Key 입력
+계정의 AWS Secret Access Key 입력
+계정의 region 입력
+// 4번째 입력인 output에 대한 입력은 생략합니다.
+$ aws configure list
+```
+
 ![aws_configure](/WebTrack2/handsOnContents/images/aws_configure.png)
 
 마지막 명령을 실행하면 다음과 같은 모습으로 터미널에 나타납니다. 다음과 같은 결과가 나오셨다면 다음으로 넘어갑시다!
@@ -107,12 +112,14 @@ secret_key     ******************** shared-credentials-file
 
 CRA는 이론에서 말한 것처럼 React 보일러 플레이트의 일종입니다. 여기서는 이 CRA를 사용하여 가장 기본적인 페이지를 만들 것입니다.
 
-> $ npx create-react-app ausg_amplify
-> (...)
-> $ cd ausg_amplify
-> $ rm -rf node_modules
-> $ npm i
-> \$ npm start
+```
+$ npx create-react-app ausg_amplify
+(...)
+$ cd ausg_amplify
+$ rm -rf node_modules
+$ npm i
+$ npm start
+```
 
 ![react_handsOn1](/WebTrack2/handsOnContents/images/react_handsOn1.png)
 
