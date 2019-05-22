@@ -60,6 +60,8 @@
 
 ![iam_edit_user2](/WebTrack2/handsOnContents/images/iam_edit_user2.png)
 
+여기서 주의 깊게 보시면 '인라인 정책 추가'를 찾으실 수 있습니다. 해당 버튼을 눌러 다음 사진과 같이 인라인 정책 수정 페이지로 이동해주세요!
+
 ![iam_edit_user3](/WebTrack2/handsOnContents/images/iam_edit_user3.png)
 
 ![iam_edit_user4](/WebTrack2/handsOnContents/images/iam_edit_user4.png)
