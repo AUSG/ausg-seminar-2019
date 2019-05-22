@@ -11,7 +11,7 @@
 $ rm -rf node_modules package-lock.json  
 // 윈도우에서는 'del /s /q node_modules'과 'del package-lock.json'를 이용해 삭제할 수 있습니다.  
 $ npm i  
-\$ npm start  
+$ npm start  
 ```
 
 ![react_handsOn2](/WebTrack2/handsOnContents/images/react_handsOn2.png)
