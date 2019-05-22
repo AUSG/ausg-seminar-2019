@@ -79,3 +79,13 @@ $ amplify publish
 [AWS Amplify 실습 자료(Cognito, S3, Lambda, AppSync)](https://awskrug.github.io/amplify-photo-gallery-workshop/)
 
 이상으로 모든 세션을 마치도록 하겠습니다. 수고하셨습니다.
+
+추가적으로 다음을 참고해 금일 진행한 세션의 AWS 서비스를 삭제하시면 이후 추과 과금에 대한 우려를 줄이실 수 있습니다. 더불어 다음 명령으로 삭제되지 않는 것들(s3 버킷등)이 있을 수 있으니 꼭 AWS 콘솔을 통해 자신의 인스턴스를 체크해보시길 바라겠습니다.
+
+### 사용했던 AWS 서비스 삭제
+
+```
+$ amplify remove auth
+$ amplify remove hosting
+$ amplify push
+```
