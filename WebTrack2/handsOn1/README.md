@@ -48,7 +48,9 @@ $ amplify --version
 1.6.8
 ```
 
-설치가 완료되었으면 AWS CLI를 통해 로컬에 Default 계정을 설정하도록 하겠습니다. 우선 AWS Console에 root 계정으로 로그인하신 후 다음을 따라 유저를 생성해주세요! 만약 이미 유저가 있으시고, Access Key와 Secret Access Key를 알고 계신다면 과정을 생략하셔도 좋습니다!
+설치가 완료되었으면 AWS CLI를 통해 로컬에 Default 계정을 설정하도록 하겠습니다. 우선 AWS Console에 root 계정으로 로그인하신 후 다음을 따라 유저를 생성해주세요!
+
+> 만약 이미 실습용 유저가 있으시고, Access Key와 Secret Access Key를 알고 계신다면 과정을 생략하셔도 좋습니다!
 
 ![iam_add_user1](/WebTrack2/handsOnContents/images/iam_add_user1.png)
 
