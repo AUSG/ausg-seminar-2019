@@ -145,4 +145,11 @@ export default class App extends React.Component {
 
 ![img_6](./images/6.png)
 
-- 일단 프론트엔드의 틀은 어느 정도 만들어졌습니다. 서버를 완성한 후에, 서로 통신할 수 있게 되었을 때 react 프로젝트를 완성시키려고 합니다. 이제 [Express 프로젝트 생성하기](../3_express/README.md)로 넘어갑시다!
+## react 프로젝트 생성 및 설정을 모두 마쳤습니다!
+
+- 구동중인 react 프로젝트는 중지시켜 주세요.
+  - 터미널에서 ctrl+c로 중지하면 됩니다.
+
+- 일단 프론트엔드의 틀은 어느 정도 만들어졌습니다. 서버를 완성한 후에, 서로 통신할 수 있게 되었을 때 react 프로젝트를 완성시키려고 합니다.
+
+- 이제 [Express 프로젝트 생성하기](../3_express/README.md)로 넘어갑시다!
