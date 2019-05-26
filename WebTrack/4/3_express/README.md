@@ -118,7 +118,7 @@ app.use(cors());
 ## 드디어 개발!! router에 path 추가하기
 앞서 말씀드렸다시피 서버는 `/detectImage`에 대해 `GET`요청을 받으면 AWS Rekognition을 이용하여 이미지 내 텍스트를 탐지하여 결과를 클라이언트에 전송해 주는 구조로 만들기로 했습니다. 이 부분을 만들어 봅시다.
 
-- `server/routes/index.js`로 이동하여, 다음과 같이 작성합니다.
+- `server/routes/index.js`로 이동하여, **기존의 `server/routes/index.js` 내용을 모두 지운 후에 다음과 같이 입력합니다.**
 
 ```javascript
 var express = require('express');
@@ -174,11 +174,11 @@ router.get('/detectImage', async (req, res, next) => {
 module.exports = router;
 ```
 
-> 코드에 대한 자세한 사항은 [aws-sdk Rekognition API](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Rekognition.html)을 참고하시면 됩니다.
+> parameter 형식 등 자세한 사항은 [aws-sdk Rekognition API](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Rekognition.html)을 참고하시면 됩니다.
 
 ## express 프로젝트 생성 및 설정을 모두 마쳤습니다!
 
 - 구동중인 express 프로젝트는 중지시켜 주세요.
   - 터미널에서 ctrl+c로 중지하면 됩니다.
-  
-- 마지막으로 [통신하기](../3_connect/README.md)로 넘어가서 프로젝트를 완성합시다!
+
+- 마지막으로 [통신하기](../4_connect/README.md)로 넘어가서 프로젝트를 완성합시다!
