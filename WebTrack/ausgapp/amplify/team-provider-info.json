@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "ausgapp-dev-20190529191304-authRole",
+            "UnauthRoleArn": "arn:aws:iam::223694052240:role/ausgapp-dev-20190529191304-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::223694052240:role/ausgapp-dev-20190529191304-authRole",
+            "Region": "ap-northeast-2",
+            "DeploymentBucketName": "ausgapp-dev-20190529191304-deployment",
+            "UnauthRoleName": "ausgapp-dev-20190529191304-unauthRole",
+            "StackName": "ausgapp-dev-20190529191304",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:223694052240:stack/ausgapp-dev-20190529191304/590e5770-81fa-11e9-b190-0699c33338cc"
+        },
+        "categories": {
+            "auth": {
+                "cognitocb3eebeb": {}
+            }
+        }
+    }
+}
