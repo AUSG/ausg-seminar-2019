@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import List from "./List"
 import Details from "./Details"
 import Amplify, { API } from "aws-amplify"
 import aws_exports from "./aws-exports"
@@ -12,13 +11,9 @@ class App extends Component {
     this.state = {
       content: "",
       title: "",
-      list: [],
       item: {},
       showDetails: false
     }
-  }
-  async componentDidMount() {
-    await this.fetchList()
   }
   handleChange = event => {
     const id = event.target.id
@@ -38,26 +33,18 @@ class App extends Component {
       console.log(error)
     })
     this.setState({ content: "", title: "" })
-    await this.fetchList()
-  }
-  async fetchList() {
-    const response = await API.get("todoAPI", "/items")
-  
-    this.setState({ list: [...response] })
   }
   loadDetailsPage = async id => {
     const response = await API.get("todoAPI", "/items/" + id)
     this.setState({ item: { ...response }, showDetails: true })
   }
-  loadListPage = () => {
-    this.setState({ showDetails: false })
-  }
+  
   delete = async id => {
     //TODO: Implement functionality
   }
   render() {
-    console.log(this.state.list)
     return (
+
       <div className="container">
         <form onSubmit={this.handleSubmit}>
           <legend>Add</legend>
@@ -90,7 +77,6 @@ class App extends Component {
         {this.state.showDetails && (
           <Details
             item={this.state.item}
-            loadListPage={this.loadListPage}
             delete={this.delete}
           />
         )}
