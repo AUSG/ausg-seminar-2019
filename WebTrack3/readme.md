@@ -90,7 +90,8 @@ $ amplify configure
   - ```bash
     $ npm install -g create-react-app
     $ create-react-app ausgapp && cd ausgapp
-    // 기본적으로 다운로드되는 패키지 저장소의 오류가 있을 경우에는 node_modules와 package-lock.json 파일을 삭제하고 다음을 진행해주세요.
+    // 기본적으로 다운로드되는 패키지 저장소의 오류가 있을 경우에는 node_modules와 package-lock.json 파일을 삭제하고
+    // 다음을 진행해주세요.
     $ rm -rf node_modules package-lock.json
     // 윈도우에서는 'del /s /q node_modules'과 'del package-lock.json'를 이용해 삭제할 수 있습니다.
     $ npm start
@@ -409,39 +410,7 @@ Operation에 Create, Update 등 클라우드에 반영되지 않은 내용을 �
 ></script>
 ```
 
-- Bootstrap을 사용합니다!
-
-#### src/List.js 파일을 만들어줍니다
-
-```javascript
-import React from "react"
-export default props => (
-  <div>
-    <legend>List</legend>
-    <div className="card" style={{ width: "25rem" }}>
-      {renderListItem(props.list, props.loadDetailsPage)}
-    </div>
-  </div>
-)
-function renderListItem(list, loadDetailsPage) {
-  const listItems = list.map(item => (
-    <li
-      key={item.id}
-      className="list-group-item"
-      onClick={() => loadDetailsPage(item.id)}
-    >
-      {item.title}
-    </li>
-  ))
-  return <ul className="list-group list-group-flush">{listItems}</ul>
-}
-```
-
-- 위 코드를 복사 후 붙여넣기 해 만들어주세요!
-
-- API에서 item들의 리스트를 render 해 올 컴포넌트입니다
-
-#### src/Details.js 파일을 만들어줍니다
+- Bootstrap을 사용합니다!#### src/Details.js 파일을 만들어줍니다
 
 ```javascript
 import React from "react"
@@ -472,31 +441,27 @@ export default props => (
 )
 ```
 
-- 삭제 버튼, 목록 버튼, item의 세부사항을 표시해주는 컴포넌트입니다
+- 삭제 버튼, item의 세부사항을 표시해주는 컴포넌트입니다
 
 #### src/App.js 파일을 열고 덮어 써 줍니다
 
 ```javascript
 import React, { Component } from "react"
-import List from "./List"
 import Details from "./Details"
 import Amplify, { API } from "aws-amplify"
 import aws_exports from "./aws-exports"
 import { withAuthenticator } from "aws-amplify-react"
 Amplify.configure(aws_exports)
+
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       content: "",
       title: "",
-      list: [],
       item: {},
       showDetails: false
     }
-  }
-  async componentDidMount() {
-    await this.fetchList()
   }
   handleChange = event => {
     const id = event.target.id
@@ -504,27 +469,26 @@ class App extends Component {
   }
   handleSubmit = async event => {
     event.preventDefault()
-    await API.post("todosAPI", "/items", {
+    await API.post("todoAPI", "/items", {
       body: {
         id: Date.now().toString(),
         title: this.state.title,
         content: this.state.content
       }
     })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(error => {
+        console.log(error)
+      })
     this.setState({ content: "", title: "" })
-    this.fetchList()
-  }
-  async fetchList() {
-    const response = await API.get("todosAPI", "/items")
-    this.setState({ list: [...response] })
   }
   loadDetailsPage = async id => {
-    const response = await API.get("todosAPI", "/items/" + id)
+    const response = await API.get("todoAPI", "/items/" + id)
     this.setState({ item: { ...response }, showDetails: true })
   }
-  loadListPage = () => {
-    this.setState({ showDetails: false })
-  }
+
   delete = async id => {
     //TODO: Implement functionality
   }
@@ -559,14 +523,8 @@ class App extends Component {
           </button>
         </form>
         <hr />
-        {this.state.showDetails ? (
-          <Details
-            item={this.state.item}
-            loadListPage={this.loadListPage}
-            delete={this.delete}
-          />
-        ) : (
-          <List list={this.state.list} loadDetailsPage={this.loadDetailsPage} />
+        {this.state.showDetails && (
+          <Details item={this.state.item} delete={this.delete} />
         )}
       </div>
     )
@@ -578,3 +536,5 @@ export default withAuthenticator(App, true)
 `npm start`
 
 ![](./img/42.png)
+
+위와 같은 화면이 보이신다면 성공입니다!
