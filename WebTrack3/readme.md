@@ -2,7 +2,7 @@
 
 ```bash
 $ npm install -g @aws-amplify/cli
-$ amplify congifure
+$ amplify configure
 ```
 
 ### amplify configure 후
