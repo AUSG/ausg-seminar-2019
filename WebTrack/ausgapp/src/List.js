@@ -1,12 +1,15 @@
 import React from "react"
-export default props => (
+export default props => {
+    console.log(props)
+    return(
   <div>
     <legend>List</legend>
     <div className="card" style={{ width: "25rem" }}>
-      {renderListItem(props.list, props.loadDetailsPage)}
+      {
+          renderListItem(props.list, props.loadDetailsPage)}
     </div>
   </div>
-)
+)}
 function renderListItem(list, loadDetailsPage) {
   const listItems = list.map(item => (
     <li

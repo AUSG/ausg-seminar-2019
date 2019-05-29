@@ -32,12 +32,17 @@ class App extends Component {
         title: this.state.title,
         content: this.state.content
       }
+    }).then(response => {
+      console.log(response)
+    }).catch(error => {
+      console.log(error)
     })
     this.setState({ content: "", title: "" })
-    this.fetchList()
+    await this.fetchList()
   }
   async fetchList() {
     const response = await API.get("todoAPI", "/items")
+  
     this.setState({ list: [...response] })
   }
   loadDetailsPage = async id => {
@@ -51,6 +56,7 @@ class App extends Component {
     //TODO: Implement functionality
   }
   render() {
+    console.log(this.state.list)
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit}>
@@ -81,14 +87,12 @@ class App extends Component {
           </button>
         </form>
         <hr />
-        {this.state.showDetails ? (
+        {this.state.showDetails && (
           <Details
             item={this.state.item}
             loadListPage={this.loadListPage}
             delete={this.delete}
           />
-        ) : (
-          <List list={this.state.list} loadDetailsPage={this.loadDetailsPage} />
         )}
       </div>
     )

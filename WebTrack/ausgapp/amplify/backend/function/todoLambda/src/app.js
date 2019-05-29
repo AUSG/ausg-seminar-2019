@@ -75,14 +75,16 @@ app.get(path + hashKeyPath, function(req, res) {
 
   let queryParams = {
     TableName: tableName,
-    KeyConditions: condition
+    ProjectionExpression: "id, title"
   } 
 
-  dynamodb.query(queryParams, (err, data) => {
+  dynamodb.scan(queryParams, (err, data) => {
     if (err) {
+      console.log("asdasd" + err)
       res.statusCode = 500;
       res.json({error: 'Could not load items: ' + err});
     } else {
+      console.log(data)
       res.json(data.Items);
     }
   });
@@ -92,7 +94,7 @@ app.get(path + hashKeyPath, function(req, res) {
  * HTTP Get method for get single object *
  *****************************************/
 
-app.get(path + '/object' + hashKeyPath + sortKeyPath, function(req, res) {
+app.get(path + hashKeyPath + sortKeyPath, function(req, res) {
   var params = {};
   if (userIdPresent && req.apiGateway) {
     params[partitionKeyName] = req.apiGateway.event.requestContext.identity.cognitoIdentityId || UNAUTH;
