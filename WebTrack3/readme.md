@@ -90,6 +90,9 @@ $ amplify configure
   - ```bash
     $ npm install -g create-react-app
     $ create-react-app ausgapp && cd ausgapp
+    // 기본적으로 다운로드되는 패키지 저장소의 오류가 있을 경우에는 node_modules와 package-lock.json 파일을 삭제하고 다음을 진행해주세요.
+    $ rm -rf node_modules package-lock.json
+    // 윈도우에서는 'del /s /q node_modules'과 'del package-lock.json'를 이용해 삭제할 수 있습니다.
     $ npm start
     ```
 
