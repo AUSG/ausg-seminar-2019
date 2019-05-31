@@ -410,7 +410,11 @@ Operation에 Create, Update 등 클라우드에 반영되지 않은 내용을 �
 ></script>
 ```
 
-- Bootstrap을 사용합니다!#### src/Details.js 파일을 만들어줍니다
+- Bootstrap을 사용합니다!
+
+
+
+#### src/Details.js 파일을 만들어줍니다
 
 ```javascript
 import React from "react"
@@ -533,8 +537,65 @@ class App extends Component {
 export default withAuthenticator(App, true)
 ```
 
+
+
+#### tableName 수정하기
+
+프로젝트의 root 폴더에서 **amplify/backend/function/todoLambda/src/app.js** 를 열어줍니다
+
+```javascript
+//at line 17
+let tableName = "todoTable";
+// 이 부분을 아래와 같이 고쳐줍니다.
+
+let tableName = "todo";
+
+```
+
+DynamoDB 리소스를 만들 때, 리소스 이름을 todoTable로, 테이블 이름을 todo로 정해줬었습니다.
+
+파일이 생성될 때 리소스 이름이 테이블 이름으로 잘못 사용되었는데요, 이를 고쳐주는 작업입니다!
+
+CLI가 업데이트 될 때 고쳐질 것으로 보이는데, 나중에 이 문서를 보고 따라하시는 분들 중 틀린 부분이 없으시다면 이 과정은 건너뛰시면 됩니다.
+
+
+
+`amplify push`
+
 `npm start`
 
 ![](./img/42.png)
 
 위와 같은 화면이 보이신다면 성공입니다!
+
+
+
+![](./img/43.png)
+
+
+
+Title과 Content를 입력 후 Submit 버튼을 눌러주세요. 이제 입력한 내용이 DB상에 잘 올라갔는지 확인 해 보겠습니다!
+
+
+
+### DB 확인하기
+
+콘솔 - DynamoDB - 테이블 - **todo-ausg** 선택 - 항목 탭에 들어가주세요!
+
+![](./img/44.png)
+
+
+
+입력한 내용이 추가된 모습입니다.
+
+
+
+## 리소스 삭제하기
+
+터미널에서 `amplify delete`를 수행해주세요!
+
+**? Are you sure you want to continue?(This would delete all the environments of the project from the cloud and wipe out all the local amplify resource files)** 에 `Yes` 를 입력합니다
+
+이번 세션에서 사용한 리소스가 모두 삭제됩니다!
+
+성공 메세지(**Project deleted locally.**)를 확인해주세요.
