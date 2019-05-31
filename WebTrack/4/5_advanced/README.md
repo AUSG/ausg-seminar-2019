@@ -18,6 +18,10 @@
   - [function component](https://reactjs.org/docs/components-and-props.html)
   - [Hook](https://reactjs.org/docs/hooks-intro.html)
 
+- state management
+  - [MobX](https://mobx.js.org/)
+  - [Redux](https://redux.js.org/)
+
 - typescript, styled-component
   - 규모가 커지면 typescript의 필요성을 자연스레 느끼실 거라 생각합니다.
   - [styled-component](https://www.styled-components.com/)
