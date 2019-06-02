@@ -9,6 +9,7 @@
 - 터미널에서 앞서 생성한 `react 프로젝트`로 이동하여, `axios`를 설치합시다.
 
 ```bash
+# ausg-seminar 폴더로 이동
 $ cd image-to-text
 
 $ npm install axios
@@ -22,13 +23,13 @@ $ yarn add axios
 
 ## Form Component 수정
 
-- `src/components/Form.jsx` 내에서 `axios`를 import 해야합니다.
+- `ausg-seminar/image-to-text/src/components/Form.jsx` 내에서 `axios`를 import 해야합니다.
 
 - 또한, submit 버튼을 누르면 서버에 요청을 하도록 `onSubmitButtonClicked` 함수를 수정합시다.
 
 - 이외의 다른 부분은 그대로 두시면 됩니다.
 
-**src/components/Form.jsx**
+**ausg-seminar/image-to-text/src/components/Form.jsx**
 
 ```javascript
 import React from 'react'
@@ -57,9 +58,9 @@ onSubmitButtonClicked = async () => {
 
 ## App.js 수정
 
-- `src/App.js` 내에서도 서버에서 제공하는 결과에 맞게 렌더링하기 위해 수정이 필요합니다.
+- `ausg-seminar/image-to-text/src/App.js` 내에서도 서버에서 제공하는 결과에 맞게 렌더링하기 위해 수정이 필요합니다.
 
-- 기존 `src/App.js`의 `render`함수 내에서 아래 코드 부분을 삭제합니다.
+- 기존 `ausg-seminar/image-to-text/src/App.js`의 `render`함수 내에서 아래 코드 부분을 삭제합니다.
 
 ```javascript
 // ...

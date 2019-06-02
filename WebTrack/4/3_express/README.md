@@ -21,14 +21,20 @@ $ yarn global add express-generator
 
 ![img_1](./images/1.png)
 
-- 이제, 이를 이용하여 새 express 프로젝트를 만들어 보겠습니다. 프로젝트를 생성하고자 하는 경로로 이동하셔서 다음과 같은 명령어를 터미널에 입력하시면 됩니다.
+- 이제, 이를 이용하여 새 express 프로젝트를 만들어 보겠습니다. 아까 생성한 프로젝트의 루트 디렉토리(ausg-seminar 폴더)로 이동하셔서 다음과 같은 명령어를 터미널에 입력하시면 됩니다.
 
 ```bash
 $ express server
 ```
 
-- `server`는 임의로 작성한 폴더명으로, 원하시는 프로젝트명으로 변경하셔도 무관합니다.  
-다음과 같이 성공적으로 express 프로젝트가 생성된 것을 보실 수 있습니다.
+- 이제 프로젝트 구조는 다음과 같게 됩니다.
+```
+ausg-seminar
+  |-- image-to-text
+  |-- server
+```
+
+- 다음과 같이 성공적으로 express 프로젝트가 생성된 것을 보실 수 있습니다.
 
 ![img_2](./images/2.png)
 
@@ -81,13 +87,13 @@ $ yarn add aws-sdk axios cors
 앞으로 클라이언트와 서버가 통신하게 될텐데요. 이를 위해서는 두 프로젝트 모두 동시에 구동되는 상태어야 하는데, 둘 다 3000번 포트를 쓰고 있네요.  
 이를 해결하기 위해 express의 포트 번호를 3001번으로 변경하도록 하겠습니다.
 
-- `server/bin/www` 파일로 이동하여, 15번째 줄을 다음과 같이 변경합니다.
+- `ausg-seminar/server/bin/www` 파일로 이동하여, 15번째 줄을 다음과 같이 변경합니다.
 
 ```javascript
 var port = 3001;
 ```
 
-- 이렇게 변경하면, `server/bin/www`는 다음과 같은 모습이 되겠네요.
+- 이렇게 변경하면, `ausg-seminar/server/bin/www`는 다음과 같은 모습이 되겠네요.
 
 ![img_6](./images/6.png)
 
@@ -118,7 +124,7 @@ app.use(cors());
 ## 드디어 개발!! router에 path 추가하기
 앞서 말씀드렸다시피 서버는 `/detectImage`에 대해 `GET`요청을 받으면 AWS Rekognition을 이용하여 이미지 내 텍스트를 탐지하여 결과를 클라이언트에 전송해 주는 구조로 만들기로 했습니다. 이 부분을 만들어 봅시다.
 
-- `server/routes/index.js`로 이동하여, **기존의 `server/routes/index.js` 내용을 모두 지운 후에 다음과 같이 입력합니다.**
+- `ausg-seminar/server/routes/index.js`로 이동하여, **기존의 `ausg-seminar/server/routes/index.js` 내용을 모두 지운 후에 다음과 같이 입력합니다.**
 
 ```javascript
 var express = require('express');

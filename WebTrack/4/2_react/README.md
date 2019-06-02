@@ -5,26 +5,27 @@
 
 # create-react-app을 이용해서 새 React 프로젝트 생성하기
 
-- 일단 create-react-app을 local 환경에 global로 설치하기 위해, 다음과 같은 명령어를 터미널에 입력합니다.
+- 저희가 만들 프로젝트의 루트 디렉토리를 만들고, 그 안에 create-react-app을 이용해 react app을 만들어보겠습니다. 일단 다음과 같은 프로젝트 구조로 만들 겁니다.
 
-```bash
-$ npm i -g create-react-app
-혹은
-$ yarn global add creat-react-app
+```
+ausg-seminar
+  |-- image-to-text
 ```
 
-- 다음과 같이 수행되었다면 성공적으로 패키지를 설치하신 겁니다!
+- 아래 명령어를 입력해서 프로젝트 구조를 만들어봅시다.
+
+```bash
+# 프로젝트 생성을 원하는 위치로 이동
+$ mkdir ausg-seminar
+$ cd ausg-seminar
+$ npx create-react-app image-to-text
+```
+
+- 다음과 같이 수행되고 있다면 성공적으로 패키지를 설치하신 겁니다!
 
 ![img_1](./images/1.png)
 
-- 이제, 이를 이용하여 새 react 프로젝트를 만들어 보겠습니다. 프로젝트를 생성하고자 하는 경로로 이동하셔서 다음과 같은 명령어를 터미널에 입력하시면 됩니다.
-
-```bash
-$ create-react-app image-to-text
-```
-
-- image-to-text는 임의로 작성한 폴더명으로, 원하시는 프로젝트명으로 변경하셔도 무관합니다.  
-다음과 같이 성공적으로 react 프로젝트가 생성된 것을 보실 수 있습니다.
+- 프로젝트 생성을 기다리면, 다음과 같이 성공적으로 react 프로젝트가 성공적으로 생성된 것을 보실 수 있습니다.
 
 ![img_2](./images/2.png)
 
@@ -57,7 +58,7 @@ $ yarn start
 
 ![img_5](./images/5.png)
 
-**/image-to-text/src/components/Form.jsx**
+**ausg-seminar/image-to-text/src/components/Form.jsx**
 
 ```javascript
 import React from 'react'
@@ -97,7 +98,7 @@ export default class Form extends React.Component {
 
 - 완료하셨다면, 이제 `image-to-text/src/App.js` 로 이동해서, **기존의 `App.js` 내용을 모두 지운 후에 다음과 같이 입력합니다.**
 
-**/image-to-text/src/App.js**
+**ausg-seminar/image-to-text/src/App.js**
 
 ```javascript
 import React from 'react'
