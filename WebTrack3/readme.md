@@ -1,5 +1,13 @@
-### Install the CLI
+# AWS Amplify를 통한 초간단 모바일 앱 만들기 
+AWS Amplify를 이용하면 백엔드에 익숙하지 않은 프론트엔드 개발자도 손쉽게 모바일/웹앱을 구성할 수 있습니다. 본 가이드는 손쉽게 Amplify 샘플앱을 구성하는 방법을 단계별로 제공합니다. 이렇게 만들어진 앱을 수정만 하면, 사용자 인증 및 데이터베이스에 간단한 글을 저장하는 앱을 원하는대로 구성할 수 있습니다. 지금 시작해 보세요. 
 
+### 시작하기 전에
+1. AWS에 회원 가입 필요
+2. 맥 또는 AWS Cloud 8 개발 환경 사용 필요 
+3. 인터넷 연결 필요 
+
+### Install the CLI
+먼저 터미널에서 아래와 같이 Amplify CLI를 설치하고 설정합니다. 
 ```bash
 $ npm install -g @aws-amplify/cli
 $ amplify configure
@@ -153,18 +161,18 @@ $ amplify push
 
   ```react
   //파일의 맨 위에 추가
-  import Amplify from 'aws-amplify'
-  import config from './aws-exports'
+  import Amplify from 'aws-amplify';
+  import config from './aws-exports';
 
   //import 구문들 아래에
-  Amplify.configure(config)
+  Amplify.configure(config);
   ```
 
 * **src/App.js** 수정
 
   ```react
   //파일의 맨 위에 추가
-  import { withAuthenticator } from 'aws-amplify-react'
+  import { withAuthenticator } from 'aws-amplify-react';
 
   //파일의 맨 밑 줄 대체
   export default withAuthenticator(App);
