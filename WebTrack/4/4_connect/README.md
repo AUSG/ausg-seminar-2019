@@ -91,7 +91,7 @@ A: AWS Rekognition의 detectText 후의 결과가 object들의 array로 넘어�
 
 ## 개발 완료!! 이제 클라이언트와 서버 모두 구동해봅시다.
 
-- 2개의 터미널 창을 여시고, 1개의 창에는 react 프로젝트가 있는 곳으로 이동해주시고 나머지 1개의 창에서는 express 프로젝트가 있는 곳으로 이동해주세요.
+- 2개의 터미널 창을 여시고, 1개의 창에는 `ausg-seminar/image-to-text`(react 프로젝트가 있는 곳)으로 이동해주시고 나머지 1개의 창에서는 `ausg-seminar/server`(express 프로젝트가 있는 곳)으로 이동해주세요.
 
 - 2개의 창 둘 다 다음 명령어를 수행하여 react와 express 프로젝트를 구동합시다.
 
