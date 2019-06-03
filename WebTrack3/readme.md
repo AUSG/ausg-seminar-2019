@@ -161,18 +161,18 @@ $ amplify push
 
   ```react
   //파일의 맨 위에 추가
-  import Amplify from 'aws-amplify'
-  import config from './aws-exports'
+  import Amplify from 'aws-amplify';
+  import config from './aws-exports';
 
   //import 구문들 아래에
-  Amplify.configure(config)
+  Amplify.configure(config);
   ```
 
 * **src/App.js** 수정
 
   ```react
   //파일의 맨 위에 추가
-  import { withAuthenticator } from 'aws-amplify-react'
+  import { withAuthenticator } from 'aws-amplify-react';
 
   //파일의 맨 밑 줄 대체
   export default withAuthenticator(App);
