@@ -65,8 +65,8 @@ onSubmitButtonClicked = async () => {
 ```javascript
 // ...
 
-{this.state.result !== '' ?
-  <div>{this.state.result}</div> : null
+{result &&
+  <div>{result}</div>
 }
 
 // ...
@@ -75,15 +75,12 @@ onSubmitButtonClicked = async () => {
 - 삭제한 부분을 아래 내용으로 채우시면 됩니다.
 
 ```javascript
-{this.state.result !== '' ?
-  this.state.result.map((result, index) => (
-    <div key={index}>
-      <h3>{result.Type}</h3>
-      <div>{result.DetectedText}</div>
-    </div>
-  ))
-  : null
-}
+{result !== '' && result.map((result, index) => (
+  <div key={index}>
+    <h3>{result.Type}</h3>
+    <div>{result.DetectedText}</div>
+  </div>
+))}
 ```
 
 > Q: 왜 이렇게 바꾸나요?  
