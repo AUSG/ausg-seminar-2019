@@ -80,9 +80,9 @@ export default function Form(props) {
       <input
         placeholder='url'
         value={imageURL}
-        onChange={this.onURLChanged}
+        onChange={onURLChanged}
       />
-      <button onClick={this.onSubmitButtonClicked}>
+      <button onClick={onSubmitButtonClicked}>
         submit
       </button>
     </>
@@ -116,8 +116,8 @@ export default function App() {
       {isLoading ?
         <div>Loading....</div> :
         <Form
-          getResult={this.getResult}
-          setLoadingStatus={this.setLoadingStatus}
+          getResult={getResult}
+          setLoadingStatus={setLoadingStatus}
         />
       }
       {result &&
