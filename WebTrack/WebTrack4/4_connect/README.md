@@ -32,27 +32,27 @@ $ yarn add axios
 **ausg-seminar/image-to-text/src/components/Form.jsx**
 
 ```javascript
-import React from 'react'
+import React, { useState } from 'react'
 // [추가] axios를 import 합니다.
 import axios from 'axios'
 
 // ...
 
 // [변경] 기존 onSubmitButtonClicked 함수를 삭제하고, 아래 내용으로 다시 작성해주세요.
-onSubmitButtonClicked = async () => {
+const onSubmitButtonClicked = async () => {
   // 로딩 상태로 변경합니다.
-  this.props.setLoadingStatus(true)
+  props.setLoadingStatus(true)
   // express 서버에 imageURL에 대해 요청합니다.
   const result = await axios.get(
-    'http://localhost:3001/detectImage/?imageURL=' + encodeURIComponent(this.state.imageURL)
+    'http://localhost:3001/detectImage/?imageURL=' + encodeURIComponent(imageURL)
   )
   // 결과를 받아옵니다.
   const detectionResultArray = result.data.detectionResult.TextDetections
   console.log('result', result)
   // App.js에 result로 전달합니다.
-  this.props.getResult(detectionResultArray)
+  props.getResult(detectionResultArray)
   // 로딩 상태를 해제합니다.
-  this.props.setLoadingStatus(false)
+  props.setLoadingStatus(false)
 }
 ```
 
