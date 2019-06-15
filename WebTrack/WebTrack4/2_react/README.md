@@ -61,38 +61,32 @@ $ yarn start
 **ausg-seminar/image-to-text/src/components/Form.jsx**
 
 ```javascript
-import React from 'react'
+import React, { useState } from 'react'
 
-export default class Form extends React.Component {
-  state = {
-    imageURL: ''
+export default function Form(props) {
+  const [imageURL, setImageURL] = useState('')
+  
+  const onURLChanged = (e) => {
+    setImageURL(e.target.value)
   }
 
-  render() {
-    return (
-      <>
-        <input
-          placeholder="url"
-          value={this.state.imageURL}
-          onChange={this.onURLChanged}
-        />
-        <button onClick={this.onSubmitButtonClicked}>
-          submit
-        </button>
-      </>
-    )
-  }
-
-  onURLChanged = (e) => {
-    this.setState({
-      imageURL: e.target.value
-    })
-  }
-
-  onSubmitButtonClicked = () => {
+  const onSubmitButtonClicked = () => {
     // TODO: call server
-    this.props.getResult(this.state.imageURL)
+    props.getResult(imageURL)
   }
+  
+  return (
+    <>
+      <input
+        placeholder='url'
+        value={imageURL}
+        onChange={onURLChanged}
+      />
+      <button onClick={onSubmitButtonClicked}>
+        submit
+      </button>
+    </>
+  )
 }
 ```
 
@@ -101,44 +95,36 @@ export default class Form extends React.Component {
 **ausg-seminar/image-to-text/src/App.js**
 
 ```javascript
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Form from './components/Form'
 
-export default class App extends React.Component {
-  state = {
-    isLoading: false,
-    result: ''
+export default function App() {
+  const [isLoading, setIsLoading] = useState(false)
+  const [result, setResult] = useState('')
+  
+  const setLoadingStatus = (status) => {
+    setIsLoading(status)
   }
 
-  render() {
-    return (
-      <div className="App">
-        {this.state.isLoading ?
-          <div>Loading....</div> : 
-          <Form
-            getResult={this.getResult}
-            setLoadingStatus={this.setLoadingStatus}
-          />
-        }
-        {this.state.result !== '' ?
-          <div>{this.state.result}</div> : null
-        }
-      </div>
-    )
+  const getResult = (result) => {
+    setResult(result)
   }
-
-  setLoadingStatus = (status) => {
-    this.setState({
-      isLoading: status
-    })
-  }
-
-  getResult = (result) => {
-    this.setState({
-      result
-    })
-  }
+  
+  return (
+    <div className='App'>
+      {isLoading ?
+        <div>Loading....</div> :
+        <Form
+          getResult={getResult}
+          setLoadingStatus={setLoadingStatus}
+        />
+      }
+      {result &&
+        <div>{result}</div>
+      }
+    </div>
+  )
 }
 ```
 
