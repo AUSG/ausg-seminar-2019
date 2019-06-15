@@ -15,12 +15,12 @@
 ```
 세션 진행자의 개발 환경
 
-$ node --version // 8.10.0 이상 필요  
-v12.1.0  
-$ npm --version // 5.2 이상 필요  
-6.9.0  
-$ aws --version  
-aws-cli/1.16.156 Python/2.7.15 Darwin/18.5.0 botocore/1.12.146  
+$ node --version // 8.10.0 이상 필요
+v12.1.0
+$ npm --version // 5.2 이상 필요
+6.9.0
+$ aws --version
+aws-cli/1.16.156 Python/2.7.15 Darwin/18.5.0 botocore/1.12.146
 ```
 
 별다른 오류 없이 위와 비슷한 결과가 나오시나요? 만약 그게 아니시라면 직접 해결해보시거나 손을 들고 주변의 스태프에게 도움을 요청하세요! 이 다음부터는 환경 설정에 대한 설명은 진행하지 않기 때문입니다.
@@ -52,31 +52,31 @@ $ amplify --version
 
 > 만약 이미 실습용 유저가 있으시고, Access Key와 Secret Access Key를 알고 계신다면 과정을 생략하셔도 좋습니다!
 
-![iam_add_user1](/WebTrack2/handsOnContents/images/iam_add_user1.png)
+![iam_add_user1](/images/iam_add_user1.png)
 
-![iam_add_user2](/WebTrack2/handsOnContents/images/iam_add_user2.png)
+![iam_add_user2](/images/iam_add_user2.png)
 
-![iam_add_user3](/WebTrack2/handsOnContents/images/iam_add_user3.png)
+![iam_add_user3](/images/iam_add_user3.png)
 
 여기까지 진행한 후 나오는 페이지에서 유의해야 할 점은 AWS Access Key와 Secret Access Key를 기억해야 한다는 점입니다. 두 개의 Key는 암호화되어 제공되기 때문에 육안으로 외우는 건 불편하겠죠. 그렇기 때문에 별도의 csv 파일이나 개인의 공간에 Key에 대한 정보를 저장하셔야 합니다.
 
 > 더불어 Key를 잊지 않기 위해 별도로 Key에 대한 정보를 저장하신다면 취급에 주의해야 한다는 점을 명심하세요!
 
-![iam_edit_user1](/WebTrack2/handsOnContents/images/iam_edit_user1.png)
+![iam_edit_user1](/images/iam_edit_user1.png)
 
-![iam_edit_user2](/WebTrack2/handsOnContents/images/iam_edit_user2.png)
+![iam_edit_user2](/images/iam_edit_user2.png)
 
 여기서 주의 깊게 보시면 '인라인 정책 추가'를 찾으실 수 있습니다. 해당 버튼을 눌러 다음 사진과 같이 인라인 정책 수정 페이지로 이동해주세요!
 
-![iam_edit_user3](/WebTrack2/handsOnContents/images/iam_edit_user3.png)
+![iam_edit_user3](/images/iam_edit_user3.png)
 
-![iam_edit_user4](/WebTrack2/handsOnContents/images/iam_edit_user4.png)
+![iam_edit_user4](/images/iam_edit_user4.png)
 
-![iam_edit_user5](/WebTrack2/handsOnContents/images/iam_edit_user5.png)
+![iam_edit_user5](/images/iam_edit_user5.png)
 
 위의 그럼에서는 CloudFront에 대해서만 설정했지만, 아래의 사진을 보고 다른 서비스들의 권한도 추가해주시면 됩니다! 이 세션에서는 모든 리소스에 대한 권한을 설정하지만, 실제로 제품을 사용할 때는 원하는 권한에 대해서만 설정해서 사용하시는 것이 바람직합니다.
 
-![iam_edit_final](/WebTrack2/handsOnContents/images/iam_edit_user_final.png)
+![iam_edit_final](/images/iam_edit_user_final.png)
 
 이제 권한이 설정된 유저를 만들었으니 다음의 명령으로 Default AWS 계정을 등록하세요(만약 이미 등록하셨다면 생략하시면 됩니다).
 
@@ -89,7 +89,7 @@ $ aws configure
 $ aws configure list
 ```
 
-![aws_configure](/WebTrack2/handsOnContents/images/aws_configure.png)
+![aws_configure](/images/aws_configure.png)
 
 마지막 명령을 실행하면 다음과 같은 모습으로 터미널에 나타납니다. 다음과 같은 결과가 나오셨다면 다음으로 넘어갑시다(서울 리전은 'ap-northeast-2')!
 
@@ -123,7 +123,7 @@ $ npm i
 $ npm start
 ```
 
-![react_handsOn1](/WebTrack2/handsOnContents/images/react_handsOn1.png)
+![react_handsOn1](/images/react_handsOn1.png)
 
 위와 같은 페이지가 정상적으로 보이시나요? 그렇다면 성공하신 겁니다! 어떤 분들께는 너무 쉬웠을 수 있지만, 여기까지 하셨으면 이제 React 프로젝트를 '시작'해보실 수 있을 거에요! 여기서는 자세하게 다루지 않지만, 만약 여러분이 React에 관심이 있으시다면 자세한 자료들을 찾아 학습해보시는 것도 좋을 것 같습니다! :)
 

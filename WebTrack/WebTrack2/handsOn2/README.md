@@ -2,54 +2,54 @@
 
 ## 사전 준비
 
-이 실습을 진행하기 위해서는 앞선 실습을 완수한 경험과 프로젝트의 디렉터리 일부를 교체해야 합니다. 다소 번거로울 수 있는 작업이지만, 제가 만들어놓은 틀을 사용하고 싶으시다면 [`/WebTrack2/handsOnContents`](/WebTrack2/handsOnContents)의 source 디렉터리에 들어있는 파일들을 실습 프로젝트에 모두 복사 붙여넣기 해주세요!
+이 실습을 진행하기 위해서는 앞선 실습을 완수한 경험과 프로젝트의 디렉터리 일부를 교체해야 합니다. 다소 번거로울 수 있는 작업이지만, 제가 만들어놓은 틀을 사용하고 싶으시다면 [`/WebTrack/WebTrack2/handsOnContents`](/WebTrack/WebTrack2/handsOnContents)의 source 디렉터리에 들어있는 파일들을 실습 프로젝트에 모두 복사 붙여넣기 해주세요!
 
 복사 붙여넣기가 끝나셨다면 실습 프로젝트에서 다음의 과정을 진행해주세요.
 
 ```
-복사, 붙여넣기 완료(기존의 src와 pakcage.json을 삭제하고 진행할 것을 권장드립니다!)  
-$ rm -rf node_modules package-lock.json  
-// 윈도우에서는 'del /s /q node_modules'과 'del package-lock.json'를 이용해 삭제할 수 있습니다.  
-$ npm i  
-$ npm start  
+복사, 붙여넣기 완료(기존의 src와 pakcage.json을 삭제하고 진행할 것을 권장드립니다!)
+$ rm -rf node_modules package-lock.json
+// 윈도우에서는 'del /s /q node_modules'과 'del package-lock.json'를 이용해 삭제할 수 있습니다.
+$ npm i
+$ npm start
 ```
 
-![react_handsOn2](/WebTrack2/handsOnContents/images/react_handsOn2.png)
+![react_handsOn2](/images/react_handsOn2.png)
 
 만약 위와 같은 결과가 나타났다면 성공하신 겁니다! 왜냐면 아직 AWS Amplify에 대한 설정을 진행하지 않았기 때문입니다. 그렇다면 다음을 따라 Amplify를 설정해주세요.
 
 ## AWS Amplify 설정하기
 
 ```
-$ amplify init  
-// 설정에 대한 설명은 하단의 사진을 참고해주세요.)  
-$ npm start  
+$ amplify init
+// 설정에 대한 설명은 하단의 사진을 참고해주세요.)
+$ npm start
 ```
 
 설정에 대해서는 다음의 사진을 참고해주세요.
 
-![amplify_init](/WebTrack2/handsOnContents/images/amplify_init.png)
+![amplify_init](/images/amplify_init.png)
 
 설정을 끝내고 'npm start'를 통해 프로젝트를 실행했을 때 아래와 같은 화면이 보인다면 성공하신 겁니다!
 
-![amplify_cognito_success](/WebTrack2/handsOnContents/images/amplify_cognito_success.png)
+![amplify_cognito_success](/images/amplify_cognito_success.png)
 
 하지만, 아직은 AWS 서비스를 붙이지 않았기 때문에 제대로 동작하지 않습니다. 회원가입을 하려고 해도 제대로 동작하지 않죠. 그렇기 때문에 이제는 AWS 서비스를 붙여보도록 하겠습니다. 다음을 따라 Amazon Cognito를 실행해주세요.
 
 ### 로그인, AWS Amplify CLI와 Amplify Framework로 Amazon Cognito 설정하기
 
 ```
-$ amplify add auth  
-// 설정에 대한 설명은 하단의 사진을 참고해주세요.)  
-$ amplify push  
-$ npm start  
+$ amplify add auth
+// 설정에 대한 설명은 하단의 사진을 참고해주세요.)
+$ amplify push
+$ npm start
 ```
 
 설정에 대해서는 다음의 사진을 참고해주세요.
 
-![amplify_add_auth](/WebTrack2/handsOnContents/images/amplify_add_auth.png)
+![amplify_add_auth](/images/amplify_add_auth.png)
 
-![amplify_push](/WebTrack2/handsOnContents/images/amplify_push.png)
+![amplify_push](/images/amplify_push.png)
 
 설정을 끝내고 'npm start'를 통해 프로젝트를 실행했을 때 정보를 입력해 이메일로 보안 코드를 받아 회원가입을 하고, 로그인이 가능하시다면 성공하신 겁니다!
 
@@ -62,15 +62,15 @@ $ npm start
 ### 웹 호스팅, AWS Amplify CLI와 Amplify Framework로 Amazon S3 설정하기
 
 ```
-$ amplify add hosting  
-// 설정에 대한 설명은 하단의 사진을 참고해주세요.)  
-$ amplify publish  
-// 배포에 성공하면 자동으로 해당 웹 페이지로 이동하게 되지만, 만약 이동되지 않았다면 실행 결과에 나오는 URL로 접속해 이동하세요.  
+$ amplify add hosting
+// 설정에 대한 설명은 하단의 사진을 참고해주세요.)
+$ amplify publish
+// 배포에 성공하면 자동으로 해당 웹 페이지로 이동하게 되지만, 만약 이동되지 않았다면 실행 결과에 나오는 URL로 접속해 이동하세요.
 ```
 
 설정에 대해서는 다음의 사진을 참고해주세요.
 
-![amplify_push](/WebTrack2/handsOnContents/images/amplify_add_hosting.png)
+![amplify_push](/images/amplify_add_hosting.png)
 
 만약 동작이 성공했다면, 우리의 웹 어플리케이션이 호스팅된 것입니다! 아주 간단하지 않나요!? 간단한 명령으로 오늘 우리는 계정에 대한 처리와 웹 호스팅을 진행했습니다. 물론 서버의 동작없이 말이지요!
 
