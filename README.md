@@ -24,7 +24,7 @@
 
 #### Android Track📱
 
-##### 5회차 : 6월 일 - 문자열 이미지를 텍스트로 변환해보기 with AWS Rekognition by [yebonkim](https://github.com/yebonkim)
+##### 5회차 : 6월 24일(월) - [Android 사전세션 with AWS IAM](<https://github.com/AUSG/ausg-seminar-2019/tree/master/AndroidTrack/preparation>) by [yebonkim](https://github.com/yebonkim)
 
 ##### 6회차 : 6월 26일(수) - 실시간 ㅇㄷㄹㅇㄷ ㅊㅅㅋㅈ(안드로이드 초성퀴즈) 앱 만들기 by [yebonkim](https://github.com/yebonkim)
 
