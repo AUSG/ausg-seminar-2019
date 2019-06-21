@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My First App</string>
+    
+    <!-- Main Activity -->
+    <string name="seeResult">결과보기</string>
+    <string name="inputName">이름을 입력하세요.</string>
+    <string name="errorMsg">한글만 입력하셨나요? 두 글자만 가능합니다.</string>
+
+    <!-- Result Activity -->
+    <string name="back">뒤로가기</string>
+    <string name="noResult">결과가 없어요 😢</string>
+    
+</resources>
