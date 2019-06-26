@@ -1,0 +1,6 @@
+[submodule "AndroidTrack/AndroidTrack/Track1"]
+	path = AndroidTrack/AndroidTrack/Track1
+	url = https://github.com/yebonkim/android-realtime-quiz.git
+[submodule "AndroidTrack/Track1"]
+	path = AndroidTrack/Track1
+	url = https://github.com/yebonkim/android-realtime-quiz.git
