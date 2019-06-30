@@ -10,13 +10,13 @@
 
 #### WEB Track🖥
 
-##### 1회차 : 5월 15일(수) - [Web Track 사전 세션 with AWS IAM](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/Preparation>) by [tonyfromundefined](<https://github.com/tonyfromundefined>)
+##### 1회차 : 5월 15일(수) - [Web Track 사전 세션 with AWS IAM](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/Preparation>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BWeb_Track%5D%20Pre_Session.pdf)) by [tonyfromundefined](<https://github.com/tonyfromundefined>)
 
-##### 2회차 : 5월 22일(수) - [AWS와 create-react-app으로 달리기 게임을 뚝딱! with AWS Amplify, AWS Cognito, AWS S3](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack2>) by [rayleighko](<https://github.com/rayleighko>)
+##### 2회차 : 5월 22일(수) - [AWS와 create-react-app으로 달리기 게임을 뚝딱! with AWS Amplify, AWS Cognito, AWS S3](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack2>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BWEB_Track%5D%20Amplify_CRA_HandsOn.pdf)) by [rayleighko](<https://github.com/rayleighko>)
 
 ##### 3회차 : 5월 29일(수) - [프론트 개발자도 혼자 웹 어플리케이션 만들 수 있어요 with AWS Amplify, AWS IAM, AWS Cognito, AWS S3, AWS Dynamo DB](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack3>) by [iamcho2](<https://github.com/iamcho2>)
 
-##### 4회차 : 6월 5일(수) - [문자열 이미지를 텍스트로 변환해보기 with AWS Rekognition](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack4>) by [ravieeeee](https://github.com/ravieeeee)
+##### 4회차 : 6월 5일(수) - [문자열 이미지를 텍스트로 변환해보기 with AWS Rekognition](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack4>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BWeb_Track%5D%20Image_To_Text.pdf)) by [ravieeeee](https://github.com/ravieeeee)
 
 ---
 
@@ -24,9 +24,9 @@
 
 #### Android Track📱
 
-##### 5회차 : 6월 24일(월) - [Android 사전세션 with AWS IAM](<https://github.com/AUSG/ausg-seminar-2019/tree/master/AndroidTrack/preparation>) by [yebonkim](https://github.com/yebonkim)
+##### 5회차 : 6월 24일(월) - [Android 사전세션 with AWS IAM](<https://github.com/AUSG/ausg-seminar-2019/tree/master/AndroidTrack/preparation>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BAndroid_Track%5D%20Pre_Session.pdf)) by [yebonkim](https://github.com/yebonkim)
 
-##### 6회차 : 6월 26일(수) - [실시간 ㅇㄷㄹㅇㄷ ㅊㅅㅋㅈ(안드로이드 초성퀴즈) 앱 만들기](https://github.com/yebonkim/android-realtime-quiz) by [yebonkim](https://github.com/yebonkim)
+##### 6회차 : 6월 26일(수) - [실시간 ㅇㄷㄹㅇㄷ ㅊㅅㅋㅈ(안드로이드 초성퀴즈) 앱 만들기](https://github.com/yebonkim/android-realtime-quiz) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BAndroid_Track%5D%20Realtime_%20Consonant_Game.pdf)) by [yebonkim](https://github.com/yebonkim)
 
 ------
 
