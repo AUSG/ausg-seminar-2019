@@ -34,7 +34,7 @@
 
 #### iOS Track🍎
 
-##### 7회차 : 7월 3일 - 별점에 따라 표시가 다른 맛집 지도 만들기 by [jaehui327](<https://github.com/jaehui327>)
+##### 7회차 : 7월 3일 - [별점에 따라 표시가 다른 맛집 지도 만들기](https://github.com/jaehui327/AUSG-iOS-MapOfRestaurant) by [jaehui327](<https://github.com/jaehui327>)
 
 ##### 8회차 : 7월 10일 - 프론트 개발자도 혼자 iOS 어플리케이션 만들 수 있어요 with AWS Amplify, AWS IAM, AWS Cognito, AWS S3 by [iamcho2](<https://github.com/iamcho2>)
 
