@@ -4,3 +4,9 @@
 [submodule "AndroidTrack/Track1"]
 	path = AndroidTrack/Track1
 	url = https://github.com/yebonkim/android-realtime-quiz.git
+[submodule "iOSTrack/iOSTrack/Track1"]
+	path = iOSTrack/iOSTrack/Track1
+	url = https://github.com/jaehui327/AUSG-iOS-MapOfRestaurant.git
+[submodule "iOSTrack/Track1"]
+	path = iOSTrack/Track1
+	url = https://github.com/jaehui327/AUSG-iOS-MapOfRestaurant.git
