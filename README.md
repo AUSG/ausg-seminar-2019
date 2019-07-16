@@ -14,7 +14,7 @@
 
 ##### 2회차 : 5월 22일(수) - [AWS와 create-react-app으로 달리기 게임을 뚝딱! with AWS Amplify, AWS Cognito, AWS S3](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack2>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BWEB_Track%5D%20Amplify_CRA_HandsOn.pdf)) by [rayleighko](<https://github.com/rayleighko>)
 
-##### 3회차 : 5월 29일(수) - [프론트 개발자도 혼자 웹 어플리케이션 만들 수 있어요 with AWS Amplify, AWS IAM, AWS Cognito, AWS S3, AWS Dynamo DB](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack3>) by [iamcho2](<https://github.com/iamcho2>)
+##### 3회차 : 5월 29일(수) - [프론트 개발자도 혼자 웹 어플리케이션 만들 수 있어요 with AWS Amplify, AWS IAM, AWS Cognito, AWS S3, AWS Dynamo DB](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack3>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BWeb_Track%5D%20Amplify_with_Web.pdf)) by [iamcho2](<https://github.com/iamcho2>)
 
 ##### 4회차 : 6월 5일(수) - [문자열 이미지를 텍스트로 변환해보기 with AWS Rekognition](<https://github.com/AUSG/ausg-seminar-2019/tree/master/WebTrack/WebTrack4>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BWeb_Track%5D%20Image_To_Text.pdf)) by [ravieeeee](https://github.com/ravieeeee)
 
@@ -36,7 +36,7 @@
 
 ##### 7회차 : 7월 3일 - [별점에 따라 표시가 다른 맛집 지도 만들기](https://github.com/jaehui327/AUSG-iOS-MapOfRestaurant) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BiOS_Track%5D%20Restaurant_Rating.pdf)) by [jaehui327](<https://github.com/jaehui327>)
 
-##### 8회차 : 7월 10일 - 프론트 개발자도 혼자 iOS 어플리케이션 만들 수 있어요 with AWS Amplify, AWS IAM, AWS Cognito, AWS S3 by [iamcho2](<https://github.com/iamcho2>)
+##### 8회차 : 7월 10일 - [프론트 개발자도 혼자 iOS 어플리케이션 만들 수 있어요 with AWS Amplify](<https://github.com/AUSG/ausg-seminar-2019/tree/master/iOSTrack/Track2>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BiOS_Track%5D%20Amplify_with_iOS.pdf)) by [iamcho2](<https://github.com/iamcho2>)
 
 ##### 9회차 : 7월 24일 - 안면인식을 통해 표정에 알맞은 음악 검색 서비스 만들기 by [kyeahen](<https://github.com/kyeahen>)
 
