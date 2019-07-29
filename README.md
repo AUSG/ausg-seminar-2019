@@ -38,5 +38,5 @@
 
 ##### 8회차 : 7월 10일 - [프론트 개발자도 혼자 iOS 어플리케이션 만들 수 있어요 with AWS Amplify](<https://github.com/AUSG/ausg-seminar-2019/tree/master/iOSTrack/Track2>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BiOS_Track%5D%20Amplify_with_iOS.pdf)) by [iamcho2](<https://github.com/iamcho2>)
 
-##### 9회차 : 7월 24일 - 안면인식을 통해 표정에 알맞은 음악 검색 서비스 만들기 by [kyeahen](<https://github.com/kyeahen>)
+##### 9회차 : 7월 24일 - [안면인식을 통해 표정에 알맞은 음악 검색 서비스 만들기](https://github.com/kyeahen/ExpressionRekognitionMusicService/tree/457fa9b145d881b1eee9ab347f9f856914ef198e) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BiOS_Track%5D%20Recommend_Music_by_Face_Recognition.pdf)) by [kyeahen](<https://github.com/kyeahen>)
 
