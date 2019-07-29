@@ -10,3 +10,6 @@
 [submodule "iOSTrack/Track1"]
 	path = iOSTrack/Track1
 	url = https://github.com/jaehui327/AUSG-iOS-MapOfRestaurant.git
+[submodule "iOSTrack/Track3"]
+	path = iOSTrack/Track3
+	url = https://github.com/kyeahen/ExpressionRekognitionMusicService.git
