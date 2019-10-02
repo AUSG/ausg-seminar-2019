@@ -26,7 +26,7 @@
 
 ##### 5회차 : 6월 24일(월) - [Android 사전세션 with AWS IAM](<https://github.com/AUSG/ausg-seminar-2019/tree/master/AndroidTrack/preparation>) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BAndroid_Track%5D%20Pre_Session.pdf)) by [yebonkim](https://github.com/yebonkim)
 
-##### 6회차 : 6월 26일(수) - [실시간 ㅇㄷㄹㅇㄷ ㅊㅅㅋㅈ(안드로이드 초성퀴즈) 앱 만들기](https://github.com/yebonkim/android-realtime-quiz) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BAndroid_Track%5D%20Realtime_%20Consonant_Game.pdf)) by [yebonkim](https://github.com/yebonkim)
+##### 6회차 : 6월 26일(수) - [실시간 ㅇㄷㄹㅇㄷ ㅊㅅㅋㅈ(안드로이드 초성퀴즈) 앱 만들기](https://github.com/yebonkim/android-realtime-quiz) ([슬라이드](https://github.com/AUSG/ausg-seminar-2019/blob/master/decks/%5BAndroid_Track%5D%20Realtime_Consonant_Game.pdf)) by [yebonkim](https://github.com/yebonkim)
 
 ------
 
