@@ -13,3 +13,6 @@
 [submodule "iOSTrack/Track3"]
 	path = iOSTrack/Track3
 	url = https://github.com/kyeahen/ExpressionRekognitionMusicService.git
+[submodule "AndroidTrack/preparation"]
+	path = AndroidTrack/preparation
+	url = https://github.com/yebonkim/android-installation-guide
